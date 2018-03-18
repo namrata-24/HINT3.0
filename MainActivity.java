@@ -49,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (item.getItemId()==R.id.navigation_search)
                 {
-                    String urll = "https://www.google.com/maps/hospitals and doctors" ;
+                    String urll = "https://www.google.com/maps/search/hospitals" ;
                     Uri mappy = Uri.parse(urll);
 
                     Intent in = new Intent(Intent.ACTION_VIEW,mappy);
-                    in.setPackage("com.google.android.apps.maps");
-                    if (in.resolveActivity(getPackageManager()) != null) {
+                    
+                    
                         startActivity(in);
-                    }
+                    
                     // transaction.replace(R.id.content,new Fragment3()).commit();
                 }
 
