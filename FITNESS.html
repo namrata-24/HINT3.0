@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>fitness</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+ body {
+  background-color: #CCE5FF;
+}
+
+
+.header{
+  padding: 30px;
+  text-align: center;
+  font-style: cursive ;
+  background-color: #ffff4d;
+  background-image: url("http://www.fanabc.com/afanoromo/media/k2/items/cache/93db4eab991c12c9b705dcc9bb1c7b95_XL.jpg");
+  background-position: top-left;
+  background-size: contain ;
+  background-repeat: no-repeat;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+</style>
+
+
+  </head>
+  <body>
+          <div class="header">
+            <h2>FITNESS</h2>
+          </div>
+
+
+          <div class="row">
+            <div class="column">
+              <h2>Importance</h2>
+              <p style=font-size:20px>
+                A person who is fit is capable of living life to its fullest extent.
+                 Physical and mental fitness play very important roles in your lives and people who are both,
+                  physically and mentally fit are less prone to medical conditions as well.People who are physically fit are also healthier,
+                  are able to maintain their most optimum weight, and are also not prone to cardiac and other health problems.
+                  In order to maintain a relaxed state of mind, a person should be physically active.
+           A person who is fit both physically and mentally is strong enough to face the ups and downs of life,
+           and is not affected by drastic changes if they take place.
+
+            </p>
+            </div>
+
+            <div class="column">
+              <h2>BMR COUNTER</h2>
+              <div class="container">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="weight"> Weight</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="number" id="weight" name="Weight" value = " " placeholder="Your weight in pounds..">
+                    </div>
+                  </div>
+
+                  <div class ="row">
+                    <div class = "col-25">
+                      <label for = "height">Height</label>
+                    </div>
+                    <div class = "col-75">
+                    <input type = "number" id = "height" name = "Height"  value = " "placeholder= "Your Height in inches..">
+                  </div>
+                </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="age">Age</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="number" id="age" name="Age" value = " "  placeholder="Your age (yrs)...">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for = "gender">Gender</label>
+                    </div>
+                    <div class = " col-75">
+                    <input type="text" id="gender" name="Gender" value = " " placeholder="gender....">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Calculate" onclick ="function calc()">
+                  </div>
+            </div>
+          </div>
+<script>
+
+var bmr ;
+function calc(){
+  var age = document.getElementById("age").value;
+ var gender = document.getElementById("gender").value;
+ var height = document.getElementById("height").value;
+ var weight = document.getElementById("weight").value;
+ if(gender=="male"){
+   bmr = 66+ (6.23 * weight)+(12.7 * height) - (6.8*age);
+ }
+ else{
+   bmr = 655 + (4.35 * weight) + (4.7 * height)-(4.7*age);
+ }
+
+   window.confirm("press OK to get result");
+  document.write("your calories intake per day" , bmr);
+}
+
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+     link1 page
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+
+      body{
+        background-color:#FFEECC;
+      }
+
+      .header {
+    padding: 30px;
+    text-align: center;
+    font-style: cursive ;
+    background-color: #00FFFF;
+    background-image: url("https://i.pinimg.com/736x/cb/cf/17/cbcf17a05f1368a3d422bb33aff91ca1--baby-cartoon-characters-cartoon-baby.jpg");
+    background-position: top left;
+    background-size: contain ;
+    background-repeat: no-repeat;
+   }
+
+   /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.footer{
+  background-color:#FF981A;
+  padding:10px;
+  text-align: center;
+}
+
+.marquee{
+   background-color: #D499FF;
+   width:400px;
+   border: 10px solid black;
+   padding:15px;
+   margin:15px;
+
+}
+
+
+
+  </style>
+</head>
+  <body>
+
+<div class="header">
+  <h1>Babies Section</h1>
+</div>
+
+
+  <div class="row">
+    <div class="column">
+      <h2>Importance</h2>
+      <p style=font-size:25px>
+             Providing a safe environment is an important part of caring for your new baby. Babies need to be safe at home and when they’re away from home.
+             There are some simple things you can do to help keep your baby safe and secure.Newborn babies have very little protection against infection, so it is important that you provide a clean, hygienic environment.
+             Our site provides all those information regarding your baby's health that you need to know.
+      </p>
+    </div>
+    <div class="column">
+      <h2>For Your Little One</h2>
+      <div class = " marquee" style=font-size:30px>
+    <p>  <marquee direction="up">some vaccine update</marquee></p>
+    <p>  <marquee direction ="up" >some health tips</marquee></p>
+    <p>  <marquee direction = "up">some thing about your baby u need to know</marquee></p>
+  </div>
+    </div>
+  </div>
+
+<div class="footer">
+
+  <hr>
+
+      <!--Call to action-->
+      <div class="text-center py-3">
+          <ul class="list-unstyled list-inline mb-0">
+              <li class="list-inline-item">
+                  <h5 class="mb-1" >Register to get updates</h5>
+              </li>
+              <li class="list-inline-item">
+                  <a href="signup.html" class="btn btn-danger btn-rounded">Sign up!</a>
+              </li>
+          </ul>
+      </div>
+      <!--/.Call to action-->
+
+      <hr>
+
+</div>
+
+
+  </body>
+</html>
